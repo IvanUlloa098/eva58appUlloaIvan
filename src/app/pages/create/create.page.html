@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>create</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Crear</h1>
+  
+  <ion-item>
+    <ion-label>Ingrese el nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="receta.nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Ingrese el pais</ion-label>
+    <ion-input type="text" [(ngModel)]="receta.pais"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Ingrese la ingredientes</ion-label>
+    <ion-input type="text" [(ngModel)]="receta.ingredientes"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Ingrese la preparacion</ion-label>
+    <ion-input type="text" [(ngModel)]="receta.preparacion"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Ingrese la porciones</ion-label>
+    <ion-input type="text" [(ngModel)]="receta.porciones"></ion-input>
+  </ion-item>
+
+  <ion-button color="primary" (click)="guardar()">Ingresar</ion-button>
+</ion-content>
